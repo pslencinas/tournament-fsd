@@ -128,7 +128,10 @@ def swissPairings():
     count = len(results)
 
     for x in range(0, count - 1, 2):
-        paired_list = (results[x][0], results[x][1], results[x + 1][0], results[x + 1][1])
+        paired_list = (results[x][0],
+                       results[x][1],
+                       results[x + 1][0],
+                       results[x + 1][1])
         pairings.append(paired_list)
 
     db.close()
